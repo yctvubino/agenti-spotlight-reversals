@@ -8,35 +8,67 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* AgentiTrade Dark Theme - Trading Dashboard */
+    --background: 245 12% 9%; /* #16161d */
+    --foreground: 240 18% 75%; /* #aab1d3 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 243 14% 11%; /* #1a1b25 */
+    --card-foreground: 240 18% 75%; /* #aab1d3 */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 243 14% 11%; /* #1a1b25 */
+    --popover-foreground: 240 18% 75%; /* #aab1d3 */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 139 77% 64%; /* #4ade80 - trading green */
+    --primary-foreground: 245 12% 9%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 244 13% 13%; /* #1e202d */
+    --secondary-foreground: 240 18% 75%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 240 10% 10%; /* #191922 */
+    --muted-foreground: 240 14% 37%; /* #52566e */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 0 84% 70%; /* #f87171 - trading red */
+    --accent-foreground: 245 12% 9%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 70%; /* #f87171 */
+    --destructive-foreground: 245 12% 9%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 240 14% 17%; /* #252833 */
+    --input: 244 13% 13%; /* #1e202d */
+    --ring: 139 77% 64%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Trading-specific design tokens */
+    --trading-bg-primary: 245 12% 9%; /* #16161d */
+    --trading-bg-secondary: 243 14% 11%; /* #1a1b25 */
+    --trading-bg-tertiary: 244 13% 13%; /* #1e202d */
+    --trading-bg-quaternary: 240 10% 10%; /* #191922 */
+    
+    --trading-text-primary: 240 18% 75%; /* #aab1d3 */
+    --trading-text-secondary: 240 14% 37%; /* #52566e */
+    
+    --trading-success: 139 77% 64%; /* #4ade80 */
+    --trading-danger: 0 84% 70%; /* #f87171 */
+    --trading-warning: 45 93% 62%; /* #fbbf24 */
+    --trading-info: 217 91% 60%; /* #3b82f6 */
+    
+    --trading-border: 240 14% 17%;
+    --trading-glow: 139 77% 64%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--trading-success)), hsl(var(--trading-info)));
+    --gradient-danger: linear-gradient(135deg, hsl(var(--trading-danger)), hsl(var(--trading-warning)));
+    --gradient-card: linear-gradient(135deg, hsl(var(--trading-bg-secondary)), hsl(var(--trading-bg-tertiary)));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 20px hsl(var(--trading-glow) / 0.2);
+    --shadow-card: 0 4px 12px hsl(0 0% 0% / 0.3);
+    --shadow-elevated: 0 8px 32px hsl(0 0% 0% / 0.4);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease-out;
 
     --sidebar-background: 0 0% 98%;
 

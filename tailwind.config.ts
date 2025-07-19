@@ -52,6 +52,21 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Trading-specific colors
+				trading: {
+					'bg-primary': 'hsl(var(--trading-bg-primary))',
+					'bg-secondary': 'hsl(var(--trading-bg-secondary))',
+					'bg-tertiary': 'hsl(var(--trading-bg-tertiary))',
+					'bg-quaternary': 'hsl(var(--trading-bg-quaternary))',
+					'text-primary': 'hsl(var(--trading-text-primary))',
+					'text-secondary': 'hsl(var(--trading-text-secondary))',
+					success: 'hsl(var(--trading-success))',
+					danger: 'hsl(var(--trading-danger))',
+					warning: 'hsl(var(--trading-warning))',
+					info: 'hsl(var(--trading-info))',
+					border: 'hsl(var(--trading-border))',
+					glow: 'hsl(var(--trading-glow))',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
